@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "DualSearch",
+  "version": "1.0",
+  "description": "Переключение между Google и Yandex поисковыми системами",
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon-inactive.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs", "storage"],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "applications": {
+  "gecko": {
+    "id": "DualSearch@verstov"
+  }
+}
+}
